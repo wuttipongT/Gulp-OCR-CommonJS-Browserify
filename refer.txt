@@ -1,0 +1,6 @@
+http://camanjs.com/
+https://trackingjs.com/
+http://evanw.github.io/glfx.js/docs/
+https://github.com/grafijs/grafi
+https://www.marvinj.org/en/index.html
+https://tesseract.projectnaptha.com/

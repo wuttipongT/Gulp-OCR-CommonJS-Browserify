@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OCR</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=uft-8"/>
+        <link rel="stylesheet" type="text/css" href="css/app.css">
+    </head>
+    <body>
+        <div id="boundingBox"></div>
+        <video id="video" width="320" height="240" autoplay></video>
+        <canvas id="video-canvas" width="320" height="240"></canvas>
+        <canvas id="snapshotCanvas" width="320" height="240"></canvas>
+        <canvas id="step1" width="320" height="240"></canvas>
+        <canvas id="step2" width="320" height="240"></canvas>
+        <canvas id="step3" width="320" height="240"></canvas>
+        <canvas id="step4" width="320" height="240"></canvas>
+        <canvas id="step5" width="320" height="240"></canvas>
+    
+        <canvas id="output" width="320" height="240"></canvas>
+        <canvas id="findTextRegions" width="320" height="240"></canvas>
+    
+        <p>
+        <div>
+            <input type="checkbox" name="isThreshold" id="isThreshold" checked />
+            <label for="volume">Threshold Lavel</label>
+            <input type="range" id="start" name="volume" min="0" max="255" value="5" style="width: 300px;">
+            <span id="value"></span>
+        </div>
+        <button name="take">Take</button>
+        <input type="button" name="reset" value="Reset"/>
+        <select>
+            <option value="0">Tracking</option>
+            <option value="1">Full</option>
+            <option value="2">Bounding Box</option>
+            <option value="3">Text Detection</option>
+        </select>
+        <input type="checkbox" name="unsharp" id="unsharp"/> <label for="unsharp">Unsharp</label>
+        &nbsp;<input type="checkbox" name="bright" id="bright"/> <label for="bright">Bright</label>
+        &nbsp;<input type="checkbox" name="blueComp" id="blueComp" checked /> <label for="blueComp">Blue Component</label>
+        &nbsp;<input type="checkbox" name="twoObject" id="twoObject" /> <label for="twoObject">Two Object</label>
+        &nbsp;<input type="checkbox" name="number" id="number" checked/> <label for="number">Number Only</label>
+        <p>Result : <span id="result"></span></p>
+
+        <script src="js/lib/glfx.js"></script>
+        <!-- <script src="js/tracking-min.js"></script> -->
+
+        <!-- <script src="js/tesseract.min.js"></script> -->
+        <!-- <script src="js/grafi.js"></script> -->
+        <!-- <script src="../node_modules/caman/dist/caman.full.min.js"></script> -->
+        <script src="node_modules/tesseract.js/dist/tesseract.min.js"></script>
+        <script type="text/javascript" src="js/lib/marvinj-1.0.min.js"></script>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

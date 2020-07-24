@@ -1,0 +1,26 @@
+{
+  "name": "ocr2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "babelify": "^8.0.0",
+    "browserify": "^16.5.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "vinyl-transform": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "gulp-ruby-sass": "^4.0.0",
+    "tesseract.js": "^1.0.19",
+    "uglifyify": "^5.0.2",
+    "vinyl-source-stream": "^2.0.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wuttipong",
+  "license": "ISC"
+}

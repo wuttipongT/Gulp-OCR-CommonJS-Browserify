@@ -1,0 +1,22 @@
+{
+  "name": "ocr2",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "wuttipong"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "caman": "^4.1.2",
+    "tracking": "tracking.js#^1.1.3"
+  }
+}
